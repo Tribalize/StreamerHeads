@@ -173,7 +173,7 @@ def load_heads_file(path: str) -> dict:
 def parse_version(value: str) -> list:
     parts = str(value).strip().replace(",", ".").split(".")
     if len(parts) != 3:
-        raise argparse.ArgumentTypeError("Version must have three parts, for example 2.1.3")
+        raise argparse.ArgumentTypeError("Version must have three parts, for example 2.1.4")
     try:
         return [int(part) for part in parts]
     except ValueError as exc:
@@ -193,7 +193,7 @@ def parse_args(argv=None):
     parser.add_argument(
         "--version",
         type=parse_version,
-        help="Version to stamp into manifests, for example 2.1.3.",
+        help="Version to stamp into manifests, for example 2.1.4.",
     )
     parser.add_argument(
         "--no-version-bump",

@@ -35,13 +35,13 @@ python -m pip install -r requirements.txt
 Build from `heads.json`:
 
 ```powershell
-python buildheads.py --heads-file heads.json --version 2.1.3 --no-version-bump --output dist/StreamerHeads-v2.1.3.mcaddon
+python buildheads.py --heads-file heads.json --version 2.1.4 --no-version-bump --output dist/StreamerHeads-v2.1.4.mcaddon
 ```
 
 Build with a one-off list:
 
 ```powershell
-python buildheads.py --heads "Grian,MumboJumbo,GeminiTay" --version 2.1.3 --no-version-bump --output dist/StreamerHeads-custom.mcaddon
+python buildheads.py --heads "Grian,MumboJumbo,GeminiTay" --version 2.1.4 --no-version-bump --output dist/StreamerHeads-custom.mcaddon
 ```
 
 ## Configure Heads
