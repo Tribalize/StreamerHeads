@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+BPH_BP/
+BPH_RP/
+dist/
+*.mcaddon
