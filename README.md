@@ -68,10 +68,12 @@ Each entry can be either a string player name or an object with:
 
 ## Output
 
-The generated `.mcaddon` contains:
+The generated `.mcaddon` contains the two pack folders directly at the archive root:
 
 - `StreamerHeads_BP/`
 - `StreamerheadsResources/`
+
+Do not wrap those folders inside `behavior_packs/` or `resource_packs/`; Bedrock expects the pack folders themselves at the root of the `.mcaddon`.
 
 Double-click the `.mcaddon` or import it into Minecraft Bedrock. The behavior and resource packs are linked in both manifests so they are added to the world together.
 

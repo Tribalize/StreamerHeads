@@ -92,7 +92,10 @@ class BuildHeadsTests(unittest.TestCase):
             with zipfile.ZipFile(output) as zf:
                 names = zf.namelist()
 
+        self.assertIn("StreamerHeads_BP/manifest.json", names)
         self.assertIn("StreamerheadsResources/manifest.json", names)
+        self.assertFalse(any(name.startswith("behavior_packs/") for name in names))
+        self.assertFalse(any(name.startswith("resource_packs/") for name in names))
 
     def test_missing_texture_check_reports_block_and_item_pngs(self):
         with tempfile.TemporaryDirectory() as tmp:

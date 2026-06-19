@@ -857,8 +857,8 @@ def generate_pack_icons():
 # ===========================================================================
 # .MCADDON BUILDER
 # An .mcaddon file is a ZIP archive containing:
-#   behavior_packs/<BP_NAME>/   ← everything in BPH_BP/
-#   resource_packs/StreamerheadsResources/  <- everything in BPH_RP/
+#   <BP_NAME>/                  <- everything in BPH_BP/
+#   StreamerheadsResources/     <- everything in BPH_RP/
 #
 # Reference:
 #   https://wiki.bedrock.dev/guide/project-setup-android
